@@ -34,7 +34,7 @@ function Skills() {
               </div>
             </p>
             <p className="tools">
-              <div className="title">TOOLS</div>
+              <div className="title">TOOLS / FRAMEWORKS</div>
               <div className="skills">
                 <SkillItem title={"Android Studio"} image={AndroidStudio} />
                 <SkillItem title={"VS Code"} image={VSCode} />

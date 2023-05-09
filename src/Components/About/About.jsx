@@ -7,7 +7,7 @@ function About() {
   return (
     <div className="about-container">
       <div className="about-layout">
-        <div className="left">IMAGE</div>
+        <div className="left">SOME ILLUSTRATION MAYBE</div>
         <div className="right">
           <h1 className="about-head">About Me</h1>
           <div className="about-text">

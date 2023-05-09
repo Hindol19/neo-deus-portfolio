@@ -2,7 +2,7 @@
 .skills-container {
   padding: 40px 0;
   position: relative;
-  height: 700px;
+  height: 850px;
   background-color: black;
   @include md {
     height: 1800px;
@@ -28,8 +28,8 @@
       box-shadow: rgba(105, 24, 104, 0.711) 0px 7px 29px 0px;
       border-radius: 8px;
       padding: 5px;
-      width: 350px;
-      height: 600px;
+      width: 310px;
+      height: 800px;
       @include md {
         border-radius: 20px;
         width: 100%;
@@ -68,6 +68,7 @@
             flex-direction: row;
           }
           .title {
+            font-family: "Raleway", sans-serif;
             text-align: center;
             margin: 8px 0;
             @include md {
