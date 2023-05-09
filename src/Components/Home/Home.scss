@@ -1,0 +1,106 @@
+@import "../../css-config/mixins.scss";
+.home-container {
+  padding: 40px 0;
+  position: relative;
+  //   background-image: linear-gradient(to right, #8e2de2, #4a00e0);
+  //   background-image: linear-gradient(to right, #4b6cb7, #182848);
+  background-image: linear-gradient(135deg, #3b2667 10%, #bc78ec 100%);
+  height: 500px;
+  @include md {
+    height: calc(100vh - 80px);
+  }
+  .home-layout {
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction: column-reverse;
+    max-width: calc(100% - 20px);
+    margin: 0 auto;
+    position: relative;
+    @include md {
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      max-width: 1200px;
+    }
+  }
+  .left {
+    margin: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50%;
+    width: 100%;
+    flex-direction: column;
+    @include md {
+      height: 75%;
+      width: 50%;
+    }
+    .top {
+      font-size: 23px;
+      font-weight: 600;
+      color: #ffd149;
+
+      margin: 5px;
+      height: 25%;
+      text-align: center;
+      width: 85%;
+      border-bottom: 1px solid #ffd149;
+      @include md {
+        width: 100%;
+        border-bottom: 2px solid #ffd149;
+        padding-bottom: 35px;
+        font-size: 75px;
+        height: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: end;
+      }
+      //   border: 2px solid green;
+    }
+    .bottom {
+      // background-color: rgba(0, 0, 0, 0.217);
+      // border-radius: 0px 0px 10px 10px;
+      font-size: 14px;
+      // color: #5de2e6;
+      color: white;
+      margin: 5px;
+      height: 75%;
+      padding: 0 50px;
+      padding-top: 5px;
+      text-align: center;
+      width: 85%;
+      @include md {
+        width: 100%;
+        padding-top: 35px;
+        font-size: 30px;
+        height: 50%;
+        display: flex;
+        justify-content: center;
+        // align-items: center;
+      }
+    }
+  }
+  .right {
+    margin: 4px;
+    // border: 2px solid red;
+    height: 50%;
+    @include md {
+      // border-radius: 20px;
+      height: 70%;
+      // height: 79%;
+      // width: 38%;
+    }
+    img {
+      border-radius: 20px;
+      border: 5px solid white;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      @include md {
+        border: 15px solid white;
+      }
+    }
+  }
+}

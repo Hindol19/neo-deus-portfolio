@@ -1,0 +1,99 @@
+@import "../../css-config/mixins.scss";
+.skills-container {
+  padding: 40px 0;
+  position: relative;
+  height: 700px;
+  background-color: black;
+  @include md {
+    height: 1800px;
+  }
+  .skills-layout {
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction: column-reverse;
+    max-width: calc(100% - 20px);
+    margin: 0 auto;
+    position: relative;
+    @include md {
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      max-width: 1400px;
+    }
+    .skills-card {
+      color: white;
+      background-color: #212121;
+      box-shadow: rgba(105, 24, 104, 0.711) 0px 7px 29px 0px;
+      border-radius: 8px;
+      padding: 5px;
+      width: 350px;
+      height: 600px;
+      @include md {
+        border-radius: 20px;
+        width: 100%;
+        height: 1400px;
+      }
+      //   border: 2px solid red;
+      .skills-head {
+        font-size: 18px;
+        padding: 16px 34px;
+        border-bottom: 1px solid #ffffffed;
+        @include md {
+          font-size: 40px;
+          padding: 31px 47px;
+          border-bottom: 2px solid rgba(239, 239, 239, 0.553);
+        }
+      }
+      .skills-text {
+        text-align: justify;
+        font-size: 12px;
+        padding: 18px 19px;
+        padding-bottom: 0;
+        @include md {
+          height: 1200px;
+          font-size: 23px;
+          padding: 40px 47px;
+        }
+        p {
+          display: flex;
+          height: 50%;
+          flex-direction: column;
+          border-bottom: 2px solid rgba(239, 239, 239, 0.553);
+          padding: 5px;
+          @include md {
+            padding: 50px 0;
+            // padding-bottom: 50px;
+            flex-direction: row;
+          }
+          .title {
+            text-align: center;
+            margin: 8px 0;
+            @include md {
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              font-size: 50px;
+              width: 30%;
+            }
+          }
+          .skills {
+            margin: 8px 0;
+            display: flex;
+            flex-wrap: wrap;
+
+            @include md {
+              width: 70%;
+            }
+          }
+        }
+        .tools {
+          @include md {
+            flex-direction: row-reverse;
+          }
+        }
+      }
+    }
+  }
+}
