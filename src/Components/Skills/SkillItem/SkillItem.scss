@@ -1,16 +1,17 @@
 @import "../../../css-config/mixins.scss";
 
 .skillItem {
+  
   box-shadow: rgba(0, 0, 0, 0.556) 0px 4px 12px;
-  background-color: #3c3b3b;
+  background-color: #134944;
   //   border: 2px solid red;
-  width: 88px;
+  width: 110px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
   padding: 10px;
-  margin: 5px auto;
+  margin: 13px auto;
   @include md {
     margin: 15px;
     width: 250px;

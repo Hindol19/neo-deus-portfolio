@@ -1,1 +1,66 @@
 @import "../../css-config/mixins.scss";
+.projects-container {
+  padding: 40px 0;
+  position: relative;
+  height: 1800px;
+  //   background-image: linear-gradient(0deg, rgba(61, 131, 97, 1) 11.2%, #134944);
+  background-color: #134944;
+  background-image: url("https://www.transparenttextures.com/patterns/diagmonds.png");
+  @include md {
+    height: 2100px;
+  }
+  .projects-layout {
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction: column-reverse;
+    max-width: calc(100% - 20px);
+    margin: 0 auto;
+    position: relative;
+    @include md {
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      max-width: 1400px;
+    }
+    .projects-card {
+      // border: 2px solid red;
+      color: rgba(255, 255, 255, 0.817);
+      // background-image: radial-gradient(
+      //   circle farthest-corner at 10% 20%,
+
+      //   rgba(4, 0, 4, 0.9) 0%,
+      //   rgba(67, 22, 79, 0.2) 120%
+      // );
+      // background-color: white;
+      // box-shadow: rgba(0, 0, 0, 0.711) 0px 7px 29px 0px;
+      border-radius: 8px;
+      padding: 5px;
+      width: 310px;
+      height: 1750px;
+      @include md {
+        border-radius: 20px;
+        width: 100%;
+        height: 1680px;
+      }
+      .projects-head {
+        text-align: right;
+        font-size: 18px;
+        padding: 16px 34px;
+        border-bottom: 1px solid #ffffffed;
+        @include md {
+          margin-bottom: 50px;
+          font-size: 40px;
+          padding: 31px 47px;
+          border-bottom: 2px solid rgba(239, 239, 239, 0.553);
+        }
+      }
+      .projects-text {
+        // padding: 30px;
+        display: flex;
+        flex-wrap: wrap;
+      }
+    }
+  }
+}

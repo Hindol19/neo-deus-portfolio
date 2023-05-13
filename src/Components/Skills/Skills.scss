@@ -2,7 +2,7 @@
 .skills-container {
   padding: 40px 0;
   position: relative;
-  height: 850px;
+  height: 1000px;
   background-color: black;
   @include md {
     height: 1800px;
@@ -24,12 +24,13 @@
     }
     .skills-card {
       color: white;
-      background-color: #212121;
+      // background-color: #212121;
+      background: linear-gradient(#212121, black 140%);
       box-shadow: rgba(105, 24, 104, 0.711) 0px 7px 29px 0px;
       border-radius: 8px;
       padding: 5px;
       width: 310px;
-      height: 800px;
+      height: 920px;
       @include md {
         border-radius: 20px;
         width: 100%;
@@ -61,13 +62,14 @@
           height: 50%;
           flex-direction: column;
           border-bottom: 2px solid rgba(239, 239, 239, 0.553);
-          padding: 5px;
+          padding: 20px 0;
           @include md {
             padding: 50px 0;
             // padding-bottom: 50px;
             flex-direction: row;
           }
           .title {
+            font-size: 20px;
             font-family: "Raleway", sans-serif;
             text-align: center;
             margin: 8px 0;
@@ -80,7 +82,7 @@
             }
           }
           .skills {
-            margin: 8px 0;
+            margin: 6px 0;
             display: flex;
             flex-wrap: wrap;
 
