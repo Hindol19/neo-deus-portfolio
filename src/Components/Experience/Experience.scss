@@ -1,1 +1,98 @@
 @import "../../css-config/mixins.scss";
+.exp-container {
+  padding: 40px 0;
+  position: relative;
+  height: 730px;
+  background-color: white;
+  @include md {
+    height: 1100px;
+  }
+  .exp-layout {
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction: column-reverse;
+    max-width: calc(100% - 20px);
+    margin: 0 auto;
+    position: relative;
+    @include md {
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      max-width: 1400px;
+    }
+    .exp-card {
+      color: white;
+      // background-color: #212121;
+      background: linear-gradient(#1e3936, #2e0039 140%);
+      box-shadow: rgb(175 24 24 / 62%) 0px 7px 27px -2px;
+      border-radius: 8px;
+      padding: 5px;
+      width: 310px;
+      height: 650px;
+      @include md {
+        border-radius: 20px;
+        width: 100%;
+        height: 900px;
+      }
+      .exp-head {
+        margin: 0 auto;
+        text-align: center;
+        font-size: 18px;
+        padding: 16px 34px;
+        border-bottom: 1px solid #ffffffed;
+        // width: 200px;
+
+        @include md {
+          //   width: 400px;
+          font-size: 40px;
+          padding: 31px 47px;
+          border-bottom: 2px solid rgba(239, 239, 239, 0.553);
+        }
+      }
+      .exp-text {
+        // border: 2px solid red;
+        // text-align: justify;
+        font-size: 12px;
+        padding: 18px 19px;
+        padding-bottom: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        height: 540px;
+        @include md {
+          flex-direction: row;
+          height: 750px;
+          font-size: 23px;
+          padding: 40px 47px;
+        }
+        .left {
+          display: none;
+          // border: 2px solid green;
+          // width: 40%;
+          background-color: rgba(0, 0, 0, 0.548);
+          height: 200px;
+          @include md {
+            display: block;
+            width: 40%;
+            height: 100%;
+          }
+        }
+        .right {
+          // border: 2px solid green;
+          // width: 50%;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-evenly;
+          align-items: center;
+          height: 500px;
+          @include md {
+            width: 50%;
+            height: 100%;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,1 +1,108 @@
 @import "../../css-config/mixins.scss";
+
+.contact-container {
+  padding: 40px 0;
+  position: relative;
+  height: 500px;
+  background-image: linear-gradient(135deg, #3b2667 10%, #bc78ec 100%);
+  @include md {
+    height: 1000px;
+  }
+  .contact-layout {
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction: column-reverse;
+    max-width: calc(100% - 20px);
+    margin: 0 auto;
+    position: relative;
+    @include md {
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      max-width: 1400px;
+    }
+    .contact-card {
+      color: white;
+      // background-color: #212121;
+      //   background: linear-gradient(#212121, black 140%);
+      box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+        rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+        rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+      border-radius: 8px;
+      padding: 5px;
+      width: 310px;
+      height: 920px;
+      @include md {
+        border-radius: 20px;
+        width: 100%;
+        height: 800px;
+      }
+      .contact-head {
+        text-align: center;
+        font-size: 18px;
+        padding: 16px 34px;
+        border-bottom: 1px solid #ffffffed;
+        @include md {
+          font-size: 40px;
+          padding: 31px 47px;
+          border-bottom: 2px solid rgba(239, 239, 239, 0.553);
+        }
+      }
+      .contact-text {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 350px;
+        @include md {
+          height: 670px;
+        }
+        input {
+          font-family: "Raleway", sans-serif;
+          //   border-radius: 0px;
+          width: 250px;
+          outline: none;
+          border: none;
+          height: 38px;
+          /* padding: 0px; */
+          margin: 10px 0px;
+          text-align: center;
+          box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+            rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+          @include md {
+            width: 500px;
+            height: 50px;
+            font-size: 20px;
+          }
+        }
+        .message {
+          height: 78px;
+          //   padding-top: -100px;
+          //   text-align: left;
+          @include md {
+            width: 500px;
+            height: 200px;
+          }
+        }
+        button {
+          font-family: "Raleway", sans-serif;
+          background-color: #212121;
+          color: white;
+          width: 250px;
+          outline: none;
+          border: none;
+          height: 28px;
+          /* padding: 0px; */
+          margin: 10px 0px;
+          @include md {
+            font-size: 20px;
+            width: 500px;
+            height: 50px;
+          }
+        }
+      }
+    }
+  }
+}

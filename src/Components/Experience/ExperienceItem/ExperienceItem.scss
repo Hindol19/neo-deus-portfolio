@@ -1,0 +1,40 @@
+@import "../../../css-config/mixins.scss";
+.exp-item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  @include md {
+  }
+  .exp-num {
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+    height: 30px;
+    width: 30px;
+    // border: 2px solid yellow;
+    background-color: rgba(0, 0, 0, 0.548);
+    @include md {
+      margin-right: 30px;
+      height: 60px;
+      width: 60px;
+    }
+  }
+  .exp-box {
+    font-family: "Raleway", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.548);
+    // border: 2px solid yellow;
+    height: 130px;
+    width: 168px;
+    @include md {
+      height: 160px;
+      width: 300px;
+    }
+  }
+}
