@@ -3,9 +3,12 @@
   padding: 40px 0;
   position: relative;
   height: 1800px;
-  //   background-image: linear-gradient(0deg, rgba(61, 131, 97, 1) 11.2%, #134944);
-  background-color: #134944;
-  background-image: url("https://www.transparenttextures.com/patterns/diagmonds.png");
+
+  background-image: linear-gradient(62deg, #fbab7e 0%, #f7ce68 100%);
+
+  // background-image: url("https://www.transparenttextures.com/patterns/diagmonds.png");
+  // background: url("https://images.unsplash.com/photo-1613036582025-ba1d4ccb3226?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=735&q=80")
+  // no-repeat center center/cover;
   @include md {
     height: 2100px;
   }
@@ -26,7 +29,7 @@
     }
     .projects-card {
       // border: 2px solid red;
-      color: rgba(255, 255, 255, 0.817);
+      color: #212121;
       // background-image: radial-gradient(
       //   circle farthest-corner at 10% 20%,
 
@@ -48,12 +51,12 @@
         text-align: right;
         font-size: 18px;
         padding: 16px 34px;
-        border-bottom: 1px solid #ffffffed;
+        border-bottom: 1px solid #212121;
         @include md {
           margin-bottom: 50px;
           font-size: 40px;
           padding: 31px 47px;
-          border-bottom: 2px solid rgba(239, 239, 239, 0.553);
+          border-bottom: 2px solid #212121;
         }
       }
       .projects-text {

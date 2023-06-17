@@ -24,6 +24,7 @@
       max-width: 1400px;
     }
     .contact-card {
+      background-color: #e3c29c;
       color: white;
       // background-color: #212121;
       //   background: linear-gradient(#212121, black 140%);
@@ -43,11 +44,12 @@
         text-align: center;
         font-size: 18px;
         padding: 16px 34px;
-        border-bottom: 1px solid #ffffffed;
+        color: #212121;
+        border-bottom: 1px solid #212121;
         @include md {
           font-size: 40px;
           padding: 31px 47px;
-          border-bottom: 2px solid rgba(239, 239, 239, 0.553);
+          border-bottom: 2px solid #212121;
         }
       }
       .contact-text {
