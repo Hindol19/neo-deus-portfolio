@@ -46,6 +46,7 @@
       align-items: center;
       justify-content: space-between;
       background-color: rgba(0, 0, 0, 0.622);
+      backdrop-filter: blur(5px);
       @include md {
         height: 70px;
         margin-top: -70px;

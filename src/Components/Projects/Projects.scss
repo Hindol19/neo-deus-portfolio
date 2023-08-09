@@ -2,15 +2,19 @@
 .projects-container {
   padding: 40px 0;
   position: relative;
-  height: 1800px;
+  // height: 1800px;
 
-  background-image: linear-gradient(62deg, #fbab7e 0%, #f7ce68 100%);
+  // background-image: linear-gradient(62deg, #fbab7e 0%, #f7ce68 100%);
 
   // background-image: url("https://www.transparenttextures.com/patterns/diagmonds.png");
-  // background: url("https://images.unsplash.com/photo-1613036582025-ba1d4ccb3226?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=735&q=80")
-  // no-repeat center center/cover;
+  background-image: radial-gradient(
+    circle farthest-corner at 10% 20%,
+    rgb(39, 139, 156) 0%,
+    rgba(24, 147, 167, 0.9) 90%
+  );
+
   @include md {
-    height: 2100px;
+    // height: 2100px;
   }
   .projects-layout {
     height: 100%;
@@ -48,15 +52,16 @@
         height: 1680px;
       }
       .projects-head {
+        color: white;
         text-align: right;
         font-size: 18px;
         padding: 16px 34px;
-        border-bottom: 1px solid #212121;
+        border-bottom: 1px solid #ffffff;
         @include md {
           margin-bottom: 50px;
           font-size: 40px;
           padding: 31px 47px;
-          border-bottom: 2px solid #212121;
+          border-bottom: 2px solid #ffffff;
         }
       }
       .projects-text {

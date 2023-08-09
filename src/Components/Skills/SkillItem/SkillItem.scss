@@ -1,9 +1,14 @@
 @import "../../../css-config/mixins.scss";
 
 .skillItem {
-  
   box-shadow: rgba(0, 0, 0, 0.556) 0px 4px 12px;
-  background-color: #134944;
+  // background-color: #134944;
+  background-image: linear-gradient(
+    288deg,
+    rgba(0, 85, 255, 1) 1.5%,
+    rgba(4, 56, 115, 1) 91.6%
+  );
+
   //   border: 2px solid red;
   width: 110px;
   display: flex;

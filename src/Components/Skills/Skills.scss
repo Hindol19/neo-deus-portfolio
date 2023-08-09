@@ -25,7 +25,12 @@
     .skills-card {
       color: white;
       // background-color: #212121;
-      background: linear-gradient(#212121, black 140%);
+      // background: linear-gradient(#212121, black 140%);
+      background-image: linear-gradient(
+        179deg,
+        rgb(22, 22, 22) 9.2%,
+        rgba(127, 16, 16, 1) 103.9%
+      );
       box-shadow: rgba(105, 24, 104, 0.711) 0px 7px 29px 0px;
       border-radius: 8px;
       padding: 5px;
