@@ -15,10 +15,11 @@ function About() {
           <h1 className="about-head">About Me</h1>
           <div className="about-text">
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Voluptatum pariatur deleniti cumque assumenda adipisci nobis
-              dolorum eaque obcaecati. Qui quia eum sapiente dolor impedit?
-              Temporibus, officiis animi! Porro, sed suscipit.
+              As a proactive and versatile student, I thrive on turning
+              challenges into opportunities. With a passion for continuous
+              learning, I want to work in the field of Software Development and
+              learn new things. I am enthusiastic about exploring new
+              technologies which have the potential to enhance user experience.
             </p>
             <p className="para2">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis

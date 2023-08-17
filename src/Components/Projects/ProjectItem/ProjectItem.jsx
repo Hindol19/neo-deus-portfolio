@@ -1,24 +1,25 @@
+import { useNavigate } from "react-router-dom";
 import React from "react";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import "./ProjectItem.scss";
 import Arpan from "../../../Assets/Arpan3.jpg";
-function ProjectItem() {
+function ProjectItem({ project }) {
+  const navigate = useNavigate();
+  const navigateToExternalWebsite = () => {
+    window.location.href = project.git;
+  };
   return (
     <div className="projectItem-container">
       <div className="project-image">
         <img src={Arpan} alt="" />
         {/* <div className="img">dfd</div> */}
         <div className="rack">
-          <h1 className="project-title">Project 1</h1>
-          <GitHubIcon />
+          <h1 className="project-title">{project.title}</h1>
+          <GitHubIcon onClick={navigateToExternalWebsite} />
         </div>
       </div>
-      <div className="project-desc">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate
-        unde, cumque amet nisi necessitatibus maxime, minima officia recusandae
-        esse sit numquam quis nemo deleniti doloribus corporis cupiditate.
-        Autem, impedit minus.
-      </div>
+      <div className="project-desc">{project.desc1}</div>
+      <div className="project-desc">{project.desc2}</div>
     </div>
   );
 }
