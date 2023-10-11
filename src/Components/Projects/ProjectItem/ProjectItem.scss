@@ -1,12 +1,14 @@
 @import "../../../css-config/mixins.scss";
 .projectItem-container {
   //   border: 2px solid red;
-  background-color: #212121;
+  background-color: #000000a0;
+  backdrop-filter: blur(5px);
   box-shadow: rgba(0, 0, 0, 0.711) 0px 7px 29px 0px;
   width: 225px;
   height: 380px;
   margin: 14px auto;
   padding: 25px;
+  z-index: 99;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -53,6 +55,7 @@
         padding: 14px 20px;
       }
       .project-title {
+        color: rgb(177, 246, 220);
         font-family: "Raleway", sans-serif;
         font-size: 15px;
         @include md {

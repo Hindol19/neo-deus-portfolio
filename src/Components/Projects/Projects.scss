@@ -1,4 +1,7 @@
 @import "../../css-config/mixins.scss";
+// #particles-js {
+//   position: absolute;
+// }
 .projects-container {
   padding: 40px 0;
   position: relative;
@@ -7,14 +10,22 @@
   // background-image: linear-gradient(62deg, #fbab7e 0%, #f7ce68 100%);
 
   // background-image: url("https://www.transparenttextures.com/patterns/diagmonds.png");
+  // background-image: radial-gradient(
+  //   circle farthest-corner at 10% 20%,
+  //   rgb(4, 29, 54) 0%,
+  //   rgba(24, 103, 167, 0.9) 90%
+  // );
   background-image: radial-gradient(
     circle farthest-corner at 10% 20%,
-    rgb(39, 139, 156) 0%,
-    rgba(24, 147, 167, 0.9) 90%
+    rgba(4, 0, 4, 1) 50%,
+    rgb(1, 11, 84) 90%
   );
-
   @include md {
-    // height: 2100px;
+    // height: 2800px;
+  }
+  canvas {
+    position: absolute;
+    z-index: 0;
   }
   .projects-layout {
     height: 100%;
@@ -44,12 +55,16 @@
       // box-shadow: rgba(0, 0, 0, 0.711) 0px 7px 29px 0px;
       border-radius: 8px;
       padding: 5px;
-      width: 310px;
-      height: 1750px;
+      // width: 310px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      // height: 1750px;
       @include md {
         border-radius: 20px;
         width: 100%;
-        height: 1680px;
+        // height: 1680px;
       }
       .projects-head {
         color: white;
@@ -67,7 +82,11 @@
       .projects-text {
         // padding: 30px;
         display: flex;
-        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 90%;
+        // flex-wrap: wrap;
       }
     }
   }

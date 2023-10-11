@@ -1,0 +1,152 @@
+@import "../../../css-config/mixins.scss";
+
+.projectItem2-container {
+  // background-color: rgba(24, 23, 23, 0.57);
+  // background-color: rgba(1, 94, 7, 0.275);
+  background-color: rgba(218, 218, 218, 0.077);
+  backdrop-filter: blur(5px);
+  box-shadow: rgba(0, 0, 0, 0.711) 0px 7px 29px 0px;
+  width: 80%;
+  height: 380px;
+  margin: 14px auto;
+  padding: 15px;
+  z-index: 99;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 15px;
+  transition: all 0.1s ease-in-out;
+  @include md {
+    width: 100%;
+    height: 500px;
+    margin: 50px 13px;
+    margin-top: 0;
+  }
+  &:hover {
+    // background-color: rgba(218, 218, 218, 0.179);
+    transform: scale(1.06);
+    // transition: all;
+  }
+  .left {
+    // border: 2px solid red;
+    width: 40%;
+    margin-right: 15px;
+    height: 100%;
+    .project-image {
+      // border: 2px solid green;
+      // width: 180px;
+      // height: 180px;
+      width: 100%;
+      height: 100%;
+      // background-color: blanchedalmond;
+      @include md {
+        // width: 400px;
+        // height: 400px;
+      }
+      img {
+        border-radius: 10px;
+        // border: 2px solid rgb(126, 15, 173);
+        display: block;
+        position: relative;
+        z-index: 9;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        // border-top-left-radius: 11px;
+        // border-bottom-left-radius: 11px;
+      }
+      .rack {
+        color: rgba(255, 255, 255, 0.817);
+        z-index: 900;
+        position: relative;
+        height: 40px;
+        margin-top: -40px;
+        padding: 14px 10px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        background-color: rgba(0, 0, 0, 0.589);
+        backdrop-filter: blur(5px);
+        @include md {
+          height: 90px;
+          margin-top: -90px;
+          padding: 14px 20px;
+        }
+        .project-title {
+          color: rgb(255, 255, 255);
+          font-family: "Raleway", sans-serif;
+          font-size: 15px;
+          @include md {
+            font-size: 20px;
+          }
+        }
+        svg {
+          cursor: pointer;
+          font-size: 15px;
+          @include md {
+            font-size: 28px;
+          }
+        }
+      }
+    }
+  }
+  .right {
+    height: 100%;
+    border-radius: 10px;
+    width: 60%;
+    border: 2px solid rgb(126, 15, 173);
+    color: white;
+    text-align: justify;
+    font-family: "Raleway", sans-serif;
+    font-size: 12px;
+    // display: flex;
+    // flex-direction: column;
+    // align-items: center;
+    // justify-content: center;
+    @include md {
+      margin: auto 0;
+      font-size: 25px;
+    }
+    .up {
+      height: 70%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      // justify-content: center;
+      p {
+        padding: 0 35px;
+        margin: 15px 0;
+        margin-top: 35px;
+      }
+    }
+    .down {
+      height: 30%;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: end;
+      .git-button {
+        // position: absolute;
+        margin-right: 35px;
+        width: 220px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
+        padding: 7px;
+        border: 2px solid rgb(126, 15, 173);
+        border-radius: 7px;
+        background-color: rgb(126, 15, 173);
+        &:hover {
+          background-color: rgba(255, 255, 255, 0);
+          cursor: pointer;
+        }
+        svg {
+          font-size: 30px;
+        }
+      }
+    }
+  }
+}

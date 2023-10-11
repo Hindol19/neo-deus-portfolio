@@ -1,7 +1,15 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./Projects.scss";
 import ProjectItem from "./ProjectItem/ProjectItem";
+import ProjectItem2 from "./ProjectItem2/ProjectItem2";
+import particlesJS from "particles.js";
+import particlesConfig from "./particlesjs-config.json";
 function Projects() {
+  useEffect(() => {
+    // Initialize Particle.js with your configuration
+    window.particlesJS("particles-js", particlesConfig);
+  }, []);
+
   const projList = [
     {
       title: "SHOP APP (Flutter, Dart, Firebase)",
@@ -37,13 +45,15 @@ function Projects() {
   ];
 
   return (
-    <div className="projects-container">
+    <div className="projects-container" id="particles-js">
+      {/* <div id="particles-js"></div> */}
+
       <div className="projects-layout">
         <div className="projects-card">
           <h1 className="projects-head">My Projects</h1>
           <div className="projects-text">
             {projList.map((item) => (
-              <ProjectItem project={item} />
+              <ProjectItem2 project={item} />
             ))}
           </div>
         </div>
